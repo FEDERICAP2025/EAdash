@@ -4,11 +4,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Employee Attrition Dashboard", layout="wide")
 
-@st.cache_data
-def load_data():
-    return pd.read_csv("EA.xlsx")
-
-df = load_data()
+df=pd.read_csv("EA.csv")
 
 st.title("Employee Attrition Dashboard")
 st.markdown("An interactive insight platform for HR Directors to explore attrition patterns and workforce dynamics.")
